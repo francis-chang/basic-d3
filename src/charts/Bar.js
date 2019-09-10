@@ -2,33 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { select } from "d3-selection";
 import { scaleBand, scaleLinear } from "d3-scale";
 import randomstring from "randomstring";
-
-let initialData = [
-    {
-        name: "foo",
-        units: 32
-    },
-    {
-        name: "bar",
-        units: 67
-    },
-    {
-        name: "baz",
-        units: 81
-    },
-    {
-        name: "hoge",
-        units: 38
-    },
-    {
-        name: "piyo",
-        units: 28
-    },
-    {
-        name: "hogera",
-        units: 59
-    }
-];
+import { initialData } from "./initialdata";
 
 const Bar = () => {
     const dimensions = { width: 600, height: 500 };
